@@ -1,0 +1,123 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-size: cover;
+}
+
+header {
+    background-color: black;
+}
+
+img {
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.head-tag {
+    float: right;
+    margin-top: 35px;
+    margin-right: 55px;
+}
+
+.head-tag a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 8px;
+}
+
+.head-tag a:hover {
+    background-color: teal;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+.side-bar {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 100px;
+}
+
+.side-bar h3 {
+    padding: 15px;
+}
+
+.side-bar li {
+    list-style-type: square;
+    padding: 5px;
+}
+
+.login {
+    float: right;
+    border: 2px solid red;
+    padding: 25px;
+    background-color: beige;
+    height: 15%;
+    margin-right: 3%;
+    margin-top: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.login h2 {
+    text-align: center;
+}
+
+.login input {
+    height: 1.5em;
+}
+
+#login-button {
+    width: 167px;
+    height: 30px;
+    background-color: dodgerblue;
+    color: white;
+    border-color: dodgerblue;
+}
+
+.container {
+    /*border: 2px solid black;*/
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+.pbox {
+    border: 3px solid white;
+    width: 22%;
+    background-color: #cccccc;
+    float: left;
+    margin-left: 10px;
+    height: 20em;
+    margin-bottom: 3%;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.pbox h3 {
+    text-align: center;
+    padding: 5px;
+}
+
+.pbox p {
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 1.5em;
+    margin-top: 30%;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 11px;
+}
