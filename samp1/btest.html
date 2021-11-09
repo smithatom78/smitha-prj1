@@ -11,17 +11,15 @@
 
 <body>
 
-
-    <div class="fullscreen-bg">
-        <video loop muted autoplay class="fullscreen-bg__video">
-            <source src="images/vid1.mp4" type="video/webm">
-            <source  src="images/vid1.mp4" type="video/mp4">
-            <source src="images/vid1.mp4" type="video/ogg">
-        </video>
+    <div id="mydiv">
+        <img id="myimg" onmouseover="changeme()" onmouseout="resetimg()" src="images/logo.png" alt="">
     </div>
 
-
-
+    <button onclick="show()">show</button>
+    <button onclick="hide()">hide</button>
+    <button onclick="chimg()">change</button>
+    <script src="images/script.js">
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/btest.css">
+</head>
+
+<body>
+
+    <div id="mydiv">
+        <p>getter abd setter</p>
+    </div>
+
+
+    <script>
+        function student(name, rollno) {
+            this.name = name;
+            this.rollno = rollno;
+
+        }
+        student.prototype.class1 = "X";
+
+        function alumni() {
+            this.batch = 2021;
+        }
+        alumni.prototype = new student("smitha", 11);
+        var std1 = new alumni();
+        console.log(std1.name);
+        console.log(std1.rollno);
+        console.log(std1.class1);
+        console.log(std1.batch);
+
+
+        /*  var std1 = new student("smith", 10);
+        console.log(std1);
+        student.prototype.class1 = "X";
+        var std2 = new student("tom", 12);
+        console.log(std2);*/
+    </script>
+</body>
+
+</html>
