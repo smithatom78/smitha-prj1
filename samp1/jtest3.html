@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/btest.css">
+</head>
+
+<body>
+
+    <div id="mydiv"><label for="number">enter the number of elements</label>
+        <input type="text" id="enter"><button type="submit" id="check" onclick="valnum()">Check</button>
+        <p id="msg"></p>
+    </div>
+
+
+    <script>
+        let num = document.getElementById("enter");
+        let msg = document.getElementById("msg");
+        let numb1 = [19, 50, 60, 70, 81, 95, 87, 17];
+
+        function valnum() {
+            let x = numb1[0].value;
+            try {
+                if (x == "") throw "field is empty";
+                if (isNaN(x)) throw "number should be entered";
+                if (x < 5) throw "low value";
+                if (x > 10) throw "high value";
+            } catch (error) {
+                msg.innerHTML = "input  " + error;
+                console.log(error);
+            } finally {
+                num.value = "";
+                num.focus();
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

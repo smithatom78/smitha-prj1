@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/btest.css">
+</head>
+
+<body>
+
+    <div id="mydiv"><label for="number">enter num between 5 & 10</label>
+        <input type="text" id="enter"><button type="submit" id="check" onclick="valnum()">Check</button>
+        <p id="msg"></p>
+    </div>
+
+
+    <script>
+        let num = document.getElementById("enter");
+        let msg = document.getElementById("msg");
+
+
+        function valnum() {
+            let x = num.value;
+            try {
+                if (x == "") throw "field is empty";
+                if (isNaN(x)) throw "number should be entered";
+                if (x < 5) throw "low value";
+                if (x > 10) throw "high value";
+            } catch (error) {
+                msg.innerHTML = "input  " + error;
+                console.log(error);
+            } finally {
+                num.value = "";
+                num.focus();
+
+            }
+
+        }
+
+        console.log(std1.name);
+        console.log(std1.rollno);
+        console.log(std1.class1);
+        console.log(std1.batch);
+
+
+        /*  var std1 = new student("smith", 10);
+        console.log(std1);
+        student.prototype.class1 = "X";
+        var std2 = new student("tom", 12);
+        console.log(std2);*/
+    </script>
+</body>
+
+</html>

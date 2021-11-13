@@ -1,0 +1,92 @@
+{
+    "grocery": [
+
+        {
+            "id": 1,
+            "itemname": "Raw rice :",
+            "quantity": "10",
+            "unit": "kg",
+            "price": "60",
+            "flag": false
+        },
+        {
+            "id": 2,
+            "itemname": "Aata",
+            "quantity": "5",
+            "unit": "kg",
+            "price": "55",
+            "flag": false
+        },
+        {
+            "id": 3,
+            "itemname": "Maida",
+            "quantity": "1",
+            "unit": "kg",
+            "price": "25",
+            "flag": true
+        },
+        {
+            "id": 4,
+            "itemname": "Sugar",
+            "quantity": "3",
+            "unit": "kg",
+            "price": "45",
+            "flag": true
+        },
+        {
+            "id": 5,
+            "itemname": "Coffee",
+            "quantity": "500",
+            "unit": "gm",
+            "price": "85",
+            "flag": true
+        },
+        {
+            "id": 6,
+            "itemname": "Butter",
+            "quantity": "200",
+            "unit": "gm",
+            "price": "36",
+            "flag": true
+        },
+        {
+            "id": 7,
+            "itemname": "Pasta",
+            "quantity": "750",
+            "unit": "gm",
+            "price": "47",
+            "flag": false
+        },
+        {
+            "id": 8,
+            "itemname": "milk powder",
+            "quantity": "500",
+            "unit": "gm",
+            "price": "90",
+            "flag": true
+        },
+        {
+            "id": 9,
+            "itemname": "green tea",
+            "quantity": "100",
+            "unit": "gm",
+            "price": "65",
+            "flag": false
+        },
+        {
+            "id": 10,
+            "itemname": "peas",
+            "quantity": "500",
+            "unit": "gm",
+            "price": "27",
+            "flag": true
+        }, {
+            "id": 11,
+            "itemname": "milk",
+            "quantity": "500",
+            "unit": "ml",
+            "price": "20",
+            "flag": true
+        }
+    ]
+}

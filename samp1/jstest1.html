@@ -1,46 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/btest.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
 </head>
 
 <body>
+    <div class="section">
+        <h1>BMI CALCULATOR</H1><br>
+        <div class="form-group">
+            <label>Height</label><br>
+            <input type="number" id="height"><br>
+        </div>
 
-    <div id="mydiv">
-        <p>getter abd setter</p>
+        <div class="form-group">
+            <label>Weight</label><br>
+            <input type="number" id="weight"><br>
+        </div>
+
+        <button id="btn" onclick="compute()">Compute BMI</button>
+        <br>
+        <br>
+        <p id="result"></p>
+        <p id="cmt"></p>
+        <br>
+
+        <p id="info">Please enter Height [cm] and Weight [kg]</p>
+        <br>
+        <br>
+        <div class="mains">
+            Underweight =
+            <18.5 <br>
+                Healthy weight = 18.5–24.9 <br> Overweight = 25–29.9<br> Obesity = >30 <br>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script>
+            let height = document.getElementById("height");
+            let weight = document.getElementById("weight");
+
+            function compute() {
+                let bmi = (weight.value / (height.value * height.value)) * 10000;
+                alert(bmi);
+                if (bmi <= 18.5) {
+                    document.getElementById("result").innerText = bmi;
+                    document.getElementById("cmt").innerText = "Underweight";
+                } else if (bmi >= 18.5 && bmi <= 24.9) {
+                    document.getElementById("result").innerText = bmi;
+                    document.getElementById("cmt").innerText = "HEALTHY";
+                } else if (bmi > 24.5 && bmi < 30) {
+                    document.getElementById("result").innerText = bmi;
+                    document.getElementById("cmt").innerText = "OVERWEIGHT";
+                } else if (bmi >= 30) {
+                    document.getElementById("result").innerText = bmi;
+                    document.getElementById("cmt").innerText = "OBESITY";
+                }
+            }
+        </script>
     </div>
-
-
-    <script>
-        function student(name, rollno) {
-            this.name = name;
-            this.rollno = rollno;
-
-        }
-        student.prototype.class1 = "X";
-
-        function alumni() {
-            this.batch = 2021;
-        }
-        alumni.prototype = new student("smitha", 11);
-        var std1 = new alumni();
-        console.log(std1.name);
-        console.log(std1.rollno);
-        console.log(std1.class1);
-        console.log(std1.batch);
-
-
-        /*  var std1 = new student("smith", 10);
-        console.log(std1);
-        student.prototype.class1 = "X";
-        var std2 = new student("tom", 12);
-        console.log(std2);*/
-    </script>
 </body>
 
 </html>
