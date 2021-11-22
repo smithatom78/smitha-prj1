@@ -16,6 +16,6 @@ function test(callback) {
 }
 
 function myFunction() {
-    // window.location.href = "https://whereyouwouldliketogo.com"
-    window.location.href = "samp1/mern-case/welcome.html";
+    window.location.href = "samp1\mern-case\welcome.html"
+        //window.location.href = "\welcome.html";
 }
