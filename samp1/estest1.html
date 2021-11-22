@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/btest.css">
+</head>
+
+<body>
+
+    <div id="clk">
+        <h2> clock</h2>
+
+        <h2 id="clk1"> </h2>
+
+
+
+    </div>
+    </div>
+    <script>
+        var fruits1 = ['apple', 'orange', 'grapes', 'mango', 'guava'];
+        var txt1 = fruits1.filter(myFunc);
+        console.log(txt1);
+
+        function myFunc(i) {
+            return i.startsWith("g");
+
+        }
+        var fruits = ['apple', 'orange', 'grapes'];
+        var txt = "";
+        fruits.forEach(myfunc);
+        console.log(txt);
+
+        function myfunc(i) {
+            txt += i + "\n";
+
+        }
+        console.log(Array.isArray(fruits));
+        const msg = " my test message  ";
+        console.log(msg.indexOf('test'));
+
+        console.log(msg[3]);
+        console.log(msg.replace('test', 'hello'));
+        console.log(msg.trim());
+        console.log(msg.split(' '));
+
+        console.log(msg.slice(4, 8));
+        //console.log(msg.indexOf('test'));
+
+
+        function clock() {
+            let clocknode = document.querySelector("#clk1");
+            return setInterval(() => {
+                let date = new Date();
+                let tick = date.toLocaleTimeString();
+                clocknode.textContent = tick;
+            }, 600);
+        }
+        clock();
+    </script>
+</body>
+
+</html>

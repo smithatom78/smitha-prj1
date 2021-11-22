@@ -9,20 +9,24 @@
     <link rel="stylesheet" href="css/btest.css">
 </head>
 
-<body background="images/groc.jfif">
+<body background="images/groc.jfif" onload="loadDoc()">
 
     <div id="demo">
-
         <h2>Grocery Shopping List</h2>
+        <button type="button" onclick="alert('Reminder to Shop!!')">VIEW ITEMS</button>
 
-        <button type="button" onclick="loadDoc()">LOAD ITEMS</button>
+
 
         <div id="tab">
 
         </div>
     </div>
-
-    <script src="ajax1.js"></script>
+    <div id="myframe">
+        <h3>JSON FILE TO VIEW
+        </h3>
+        <iframe style="background-color:beige" src=" grocery.json " height="450 " width="100%" frameborder=" 1 "></iframe></div>
+    <h2 id="clk1"> </h2>
+    <script src="ajax1.js "></script>
 </body>
 
 </html>

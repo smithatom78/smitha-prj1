@@ -1,46 +1,55 @@
-* {
-    padding: 0%;
-    margin: 0%;
-}
-
-body {
-    background-size: cover;
-}
-
-header {
-    background-color: black;
-}
-
-h2 {
-    border: 2px solid red;
-    padding: 25px;
-    background-color: beige;
-    height: 15%;
-    margin-right: 0.5%;
-    margin-top: 0.5%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-}
-
-button {
-    width: 167px;
-    height: 70px;
-    background-color: dodgerblue;
-    color: white;
-    font-weight: bolder;
-    border-color: dodgerblue;
-    position: relative;
-    top: 10px;
-    margin-left: 45%;
-    font-size: larger;
-}
-
-.tab {
-    border: 2px solid red;
-    padding: 25px;
-    background-color: beige;
-    height: 200;
-    margin-right: 3%;
-    margin-top: 3%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+                            * {
+                                padding: 0%;
+                                margin: 0%;
+                            }
+                            
+                            body {
+                                background-size: cover;
+                            }
+                            
+                            header {
+                                background-color: black;
+                            }
+                            
+                            h2 {
+                                border: 2px solid red;
+                                padding: 25px;
+                                background-color: beige;
+                                height: 15%;
+                                margin-right: 0.5%;
+                                margin-top: 0.5%;
+                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                text-align: center;
+                            }
+                            
+                            button {
+                                width: 167px;
+                                height: 70px;
+                                background-color: dodgerblue;
+                                color: white;
+                                font-weight: bolder;
+                                border-color: dodgerblue;
+                                position: relative;
+                                top: 10px;
+                                margin-left: 45%;
+                                font-size: larger;
+                            }
+                            
+                            .tab {
+                                border: 2px solid red;
+                                padding: 25px;
+                                background-color: beige;
+                                height: 200;
+                                margin-right: 3%;
+                                margin-top: 3%;
+                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            }
+                            
+                            h3 {
+                                border: 2px solid red;
+                                padding: 25px;
+                                background-color: beige;
+                                height: "100px";
+                                width: "200px";
+                                text-align: center;
+                            }

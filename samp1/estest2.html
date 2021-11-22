@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/btest.css">
+</head>
+
+<body>
+
+    <div id="clk">
+        <h2> clock</h2>
+
+        <h2 id="clk1"> </h2>
+
+
+
+    </div>
+    </div>
+    <script>
+        //var num1 = 10;
+        //var num2 = 20;
+        // let multiply = function(num1, num2)
+
+        let sum = (num1, num2) => num1 + num2;
+        //use of arrow function in simple method
+        result1 = sum(20, 30);
+        console.log(result1);
+        //arrow function with curly braces
+        let multiply = (num1, num2) =>
+            //function multiply(num1, num2)
+            {
+                return num1 * num2;
+            }
+        result = multiply(20, 30);
+        console.log(result);
+        var person = {
+            "id": 8,
+            "name": "smitha",
+            "age": 500
+        }
+        console.log(person);
+        var jperson = JSON.stringify(person);
+        console.log(jperson);
+        var person1 = JSON.parse(jperson);
+        colsole.log(person1);
+
+        function clock() {
+            let clocknode = document.querySelector("#clk1");
+            return setInterval(() => {
+                let date = new Date();
+                let tick = date.toLocaleTimeString();
+                clocknode.textContent = tick;
+            }, 600);
+        }
+        clock();
+    </script>
+</body>
+
+</html>
+
+</html>

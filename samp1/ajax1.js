@@ -23,3 +23,13 @@ function loadDoc() {
     xhttp.open("GET", "grocery.json", true);
     xhttp.send();
 }
+
+function clock() {
+    let clocknode = document.querySelector("#clk1");
+    return setInterval(() => {
+        let date = new Date();
+        let tick = date.toLocaleTimeString();
+        clocknode.textContent = tick;
+    }, 600);
+}
+clock();

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/btest.css">
+</head>
+
+<body>
+
+    <div id="clk">
+        <h2>PASS STRENGTH</h2>
+
+    </div>
+    </div>
+    <script>
+        function chkpass(pwd1) {
+            alert("hi");
+
+            let lower = /(?=.+[a-z])/;
+            let upper = /(?=.+[A-Z])/;
+            let onedigit = /(?=.+[0-9])/;
+            let spchar = /(?=.+[@#$%^&*!])/;
+            let mineightchar = /(?=.{8,})/;
+            let isValid = lower.test(pwd1) && upper.test(pwd1) && onedigit.test(pwd1) && spchar.test(pwd1) && mineightchar.test(pwd1);
+            return isValid ? "your password is valid" : "your password is invalid";
+
+        }
+        console.log(chkpass('abc'));
+        console.log(chkpass('9aB!45679'));
+    </script>
+</body>
+
+</html>
