@@ -18,6 +18,6 @@ function test(callback) {
 function myFunction() {
     //  window.location.href = "https://smithatom78.github.io/samp1/mern-case/welcome.html"
     //window.location.href = "\welcome.html";
-    window.location.href = "..\samp1\mern-case\welcome.html";
+    window.location.href = "https://smithatom78.github.io/samp1/mern-case/welcome.html";
 
 }
